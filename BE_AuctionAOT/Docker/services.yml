@@ -1,0 +1,7 @@
+﻿# services.yml #run: cd Docker -> docker-compose -f services.yml up -d
+name: auctionot
+services:
+  rabbitmq:
+    extends:
+      file: ./rabbitmq.yml
+      service: rabbitmq
